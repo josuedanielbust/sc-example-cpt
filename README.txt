@@ -2,7 +2,7 @@
 Contributors: josuedanielbust
 Tags: example, plugin, custom post type, cpt
 Requires at least: 3.0.1
-Tested up to: 5.5
+Tested up to: 6.3
 Stable tag: 5.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
