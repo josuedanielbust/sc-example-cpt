@@ -160,6 +160,7 @@ class CPT_Example {
 		// Custom Post Type
 		$this->loader->add_action( 'init', $plugin_admin, 'register_post_type_example' );
 		$this->loader->add_action( 'init', $plugin_admin, 'register_post_type_example_categories' );
+		$this->loader->add_action( 'init', $plugin_admin, 'register_post_type_example_tags' );
 		$this->loader->add_action( 'init', $plugin_admin, 'register_post_type_example_metadata' );
 		$this->loader->add_action( 'admin_init', $plugin_admin, 'register_post_type_metaboxes' );
 		$this->loader->add_action( 'save_post', $plugin_admin, 'register_post_type_metaboxes_save' );

@@ -121,8 +121,8 @@ class CPT_Example_Admin {
     register_taxonomy('example_category', 'example',
       array(
         'labels'            =>  array(
-          'name' => _x( 'Categories', 'Categories' ),
-          'singular_name' => _x( 'Category', 'CPT Category' ),
+          'name' => _x( 'Categories', 'taxonomy general name' ),
+          'singular_name' => _x( 'Category', 'taxonomy singular name' ),
           'search_items' =>  __( 'Search Category' ),
           'popular_items' => __( 'Popular Categories' ),
           'all_items' => __( 'All Categories' ),
@@ -137,11 +137,45 @@ class CPT_Example_Admin {
           'choose_from_most_used' => __( 'Choose from the most used categories' ),
           'menu_name' => __( 'Categories' ),
         ),
+        'hierarchical'      =>  true,
         'show_ui'           =>  true,
         'show_in_rest'      =>  true,
-        'hierarchical'      =>  true,
         'query_var'         =>  true,
         'rewrite'           =>  array( 'slug' => 'example_category' ),
+      )
+    );
+  }
+  
+  /**
+   * Register Custom Post Type Tags
+   * 
+   * @since      1.0.0
+   */
+  public function register_post_type_example_tags() {
+    register_taxonomy('example_tags', 'example',
+      array(
+        'labels'            =>  array(
+          'name' => _x( 'Tags', 'taxonomy general name' ),
+          'singular_name' => _x( 'Tag', 'taxonomy singular name' ),
+          'search_items' =>  __( 'Search Tags' ),
+          'popular_items' => __( 'Popular Tags' ),
+          'all_items' => __( 'All Tags' ),
+          'parent_item' => null,
+          'parent_item_colon' => null,
+          'edit_item' => __( 'Edit Tag' ), 
+          'update_item' => __( 'Update Tag' ),
+          'add_new_item' => __( 'Add New Tag' ),
+          'new_item_name' => __( 'New Tag Name' ),
+          'separate_items_with_commas' => __( 'Separate tags with commas' ),
+          'add_or_remove_items' => __( 'Add or remove tags' ),
+          'choose_from_most_used' => __( 'Choose from the most used tags' ),
+          'menu_name' => __( 'Tags' ),
+        ),
+        'hierarchical'      =>  false,
+        'show_ui'           =>  true,
+        'show_in_rest'      =>  true,
+        'query_var'         =>  true,
+        'rewrite'           =>  array( 'slug' => 'example_tags' ),
       )
     );
   }
