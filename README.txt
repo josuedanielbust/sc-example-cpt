@@ -11,10 +11,8 @@ Josue Bustamante - CPT Example Plugin.
 
 == Description ==
 
-This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
-
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+This plugin register a Custom Post Type (CPT) with the name of `example`. Adding the common capabilities that native `Post` type owns and creating a metadata box with a single field where is possible to save any data.
+All the information of the CPT is also available via WP Rest API on the `/wp-json/wp/v2/example` path.
 
 == Installation ==
 
