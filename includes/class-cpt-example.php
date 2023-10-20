@@ -159,6 +159,7 @@ class CPT_Example {
 		// $this->loader->add_action( 'wp_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 		// Custom Post Type
 		$this->loader->add_action( 'init', $plugin_admin, 'register_post_type_example' );
+		$this->loader->add_action( 'init', $plugin_admin, 'register_post_type_example_categories' );
 		$this->loader->add_action( 'init', $plugin_admin, 'register_post_type_example_metadata' );
 		$this->loader->add_action( 'admin_init', $plugin_admin, 'register_post_type_metaboxes' );
 		$this->loader->add_action( 'save_post', $plugin_admin, 'register_post_type_metaboxes_save' );
