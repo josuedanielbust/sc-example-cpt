@@ -1,0 +1,9 @@
+/** All of the CSS for your admin-specific functionality should be included in this file. */
+.cpt-metadata-groups { display: flex; flex-direction: column; padding: 0 3rem; margin-top: 2rem; }
+.cpt-metadata-groups .cpt-control-group { display: flex; margin: 0.5rem 0; }
+.cpt-metadata-groups .cpt-control-group h2 { flex-grow: 1; font-weight: bolder; padding: 1rem 0 !important; }
+.cpt-metadata-groups .cpt-control-group label { min-width: 20%; max-width: 20%; }
+.cpt-metadata-groups .cpt-control-group select, .cpt-metadata-groups .cpt-control-group input[type="text"], .cpt-metadata-groups .cpt-control-group input[type="password"] { flex-grow: 1; }
+.cpt-metadata-groups .cpt-control-group textarea { flex-grow: 1; min-height: 10rem; }
+
+/*# sourceMappingURL=cpt-example-admin.css.map */

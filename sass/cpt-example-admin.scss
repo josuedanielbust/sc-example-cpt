@@ -1,0 +1,33 @@
+@import 'variables';
+
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.cpt-metadata-groups {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3rem;
+  margin-top: 2rem;
+  .cpt-control-group {
+    display: flex;
+    margin: 0.5rem 0;
+    h2 {
+      flex-grow: 1;
+      font-weight: bolder;
+      padding: 1rem 0 !important;
+    }
+    label {
+      min-width: 20%;
+      max-width: 20%;
+    }
+    select, input[type="text"], input[type="password"] {
+      flex-grow: 1;
+    }
+    textarea {
+      flex-grow: 1;
+      min-height: 10rem;
+    }
+  }
+}

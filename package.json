@@ -1,0 +1,29 @@
+{
+  "name": "sc-example-cpt",
+  "version": "1.0.0",
+  "description": "SC Example CPT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josuedanielbust/sc-example-cpt.git"
+  },
+  "keywords": [
+    "php",
+    "wordpress"
+  ],
+  "author": "josuedanielbust",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josuedanielbust/sc-example-cpt/issues"
+  },
+  "homepage": "https://github.com/josuedanielbust/sc-example-cpt#readme",
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}
